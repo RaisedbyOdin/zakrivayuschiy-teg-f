@@ -236,7 +236,7 @@ button {
 }
 
 .effect-five {
-  filter: saturate(200%);
+  filter: saturate(200%) contrast(30%);
 }
 
 .effect-six {
@@ -248,7 +248,7 @@ button {
 }
 
 .effect-eight {
-  filter: hue-rotate(-15deg);
+  filter: hue-rotate(-15deg) grayscale(30%);
 }
 
 .card__sign {
