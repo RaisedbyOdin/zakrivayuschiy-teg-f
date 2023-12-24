@@ -7,16 +7,15 @@
 
 :root.theme-light {
     --bg-pic: #d3d3d3;
-    --grad-one: #e7e7e7;
-    --grad-two: #1a1a1a;
+    --grad-light: #e7e7e7;
+    --grad-dark: #1a1a1a;
     --bg-color:#ffffff;
     --button-text-color: #000;
-    --bg-color-dialog: rgb(0 0 0 / 0.3);
     --dialog-text-color: #000;
     --accent-color: #000;
     --primary-font: 400;
     --w-wght: 700;
-    --sign-shadow: #000;
+    --sign-shadow: #fff;
     --like-contour: #000;
     --icon-sparks: red;
     --fill-hover: #fff;
@@ -25,12 +24,11 @@
 
   :root.theme-dark {
     --bg-pic: #000000;
-    --grad-one: #007f0c;
-    --grad-two: #004306;
+    --grad-light: #007f0c;
+    --grad-dark: #004306;
     --bg-color: #000000;
     --button-text-color: #00CC14;
-    --sign-shadow: #00CC14;
-    --bg-color-dialog: rgb(0 0 0 / 0.3);
+    --sign-shadow: #000;
     --dialog-text-color: #00CC14;
     --accent-color: #00CC14;
     --primary-font: 465;
@@ -44,11 +42,11 @@
   @media (prefers-color-scheme: dark) {
     :root {
       --bg-pic: #000000;
-      --grad-one: #007f0c;
-      --grad-two: #004306;
+      --grad-light: #007f0c;
+      --grad-dark: #004306;
       --bg-color: #000000;
+      --sign-shadow: #000;
       --button-text-color: #00CC14;
-      --bg-color-dialog: rgb(0 0 0 / 0.3);
       --dialog-text-color: #00CC14;
       --primary-font: 465;
       --accent-color: #00CC14;
@@ -58,5 +56,13 @@
       --fill-path-hover: #00CC14;
       --like-main: red;
       --fill-hover: #00CC14;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg-pic: #d3d3d3;
+      --grad-light: #e7e7e7;
+      --grad-dark: #1a1a1a;
     }
   }

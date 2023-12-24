@@ -6,12 +6,12 @@
     --w-wght: 700;
     --bg-color: #fff;
     --button-text-color: #000;
-    --bg-color-dialog: rgb(0 0 0 / 0.3);
+    --bg-color-dialog: rgba(0 0 0 / 0.75);
     --dialog-text-color: #000;
     --fill-hover: #fff;
-    --sign-shadow: #000;
+    --sign-shadow: #fff;
     --accent-color: #000;
-    --sz-wdth: clamp(375px, 48vw, 796px);
+    --sz-wdth: clamp(23.188rem, 30.516vw + 16.035rem, 43.5rem);
     --sign-shadow: #fff;
     --like-contour: #000;
     --icon-sparks: #ff0000;
