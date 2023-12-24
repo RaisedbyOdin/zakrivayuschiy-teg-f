@@ -26,7 +26,6 @@
   font-size: 18px;
   font-family: var(--main-font, sans-serif);
   color: var(--accent-color);
-  font-variation-settings: "wght" var(--w-wght);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
@@ -171,6 +170,7 @@ button {
   background-color: var(--accent-color);
   block-size: 2px;
   inline-size: 100%;
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:disabled {
@@ -212,6 +212,7 @@ button {
 
 .card__picture-container {
   position: relative;
+  border-block: 2px solid var(--accent-color);
 }
 
 .card__picture {
@@ -221,6 +222,10 @@ button {
   inline-size: 100%;
   aspect-ratio: 1 / 1;
   z-index: 1;
+}
+
+.card__picture-container img {
+  display: block;
 }
 
 .effect-brightness {
@@ -275,6 +280,7 @@ button {
   .card__sign {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--sign-shadow);
+    text-stroke: 1px var(--sign-shadow);
   }
 }
 
@@ -285,6 +291,7 @@ button {
   gap: 27px;
   color: var(--button-text-color);
   line-height: 21px;
+  font-weight: var(--primary-font);
 }
 
 .card__buttons {
@@ -363,10 +370,9 @@ button {
 }
 
  .bottom__button-container {
-  margin: 54px 0 105px;
+  margin: 0 0 105px;
   inline-size: clamp(306px, 24vw, 335px);
   min-block-size: 48px;
-  padding: 0px 35px;
 }
 
 .floppy__button-pic {
@@ -377,15 +383,15 @@ button {
 
 .floppy__button {
   background-color: var(--bg-color);
-  display: grid;
-  grid-template-columns: 21px 1fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
-  padding: 11.5px 17px;
+  padding: 15px 18px;
   inline-size: 100%;
-  block-size: 51px;
+  
 }
 
 @media (width <=768px) {
@@ -404,11 +410,11 @@ button {
 @media (width <=375px) {
   
   .header__theme-menu {
-    margin-inline-start: 10.5px;
+    margin-inline-start: 19px;
   }
 
   .content-section {
-    inline-size: 100vw;
+    inline-size: 100%;
   }
 
   .main {
@@ -426,7 +432,7 @@ button {
   .floppy__button {
     grid-template-rows: 28px 1fr;
     grid-template-columns: 100%;
-    block-size: 80px;
+    flex-direction: column;
     justify-items: center;
   }
 }
