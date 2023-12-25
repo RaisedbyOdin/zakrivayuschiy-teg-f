@@ -291,7 +291,7 @@ button {
   gap: 27px;
   color: var(--button-text-color);
   line-height: 21px;
-  font-weight: var(--primary-font);
+  font-variation-settings: "wght" var(--primary-font);
 }
 
 .card__buttons {
